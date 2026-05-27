@@ -4,9 +4,10 @@
 .Rproj.user/
 *.Rproj
 
-# Generated outputs (created by MainAnalysis.R — not tracked)
+# Generated outputs and pre-computed models (downloaded at Binder build time via postBuild)
 Figures/
 Tables/
+Results/
 
 # Claude Code project files
 .claude/

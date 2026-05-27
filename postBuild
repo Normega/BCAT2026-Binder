@@ -1,0 +1,27 @@
+#!/bin/bash
+set -e
+
+# Download pre-computed brms model objects from the pinned commit where they
+# were originally stored. This keeps the repo clone small for Binder while
+# still making models available without recomputation.
+REPO=Normega/BCAT2026-Binder
+COMMIT=d0d86a2
+BASE=https://raw.githubusercontent.com/${REPO}/${COMMIT}
+
+mkdir -p Results/Models/TestRDS Results/Models/Study3
+
+for f in \
+  Results/Models/TestRDS/brms_arousal_group_bs.rds \
+  Results/Models/TestRDS/brms_arousal_nodirect_group.rds \
+  Results/Models/TestRDS/brms_mediator_group.rds \
+  Results/Models/TestRDS/brms_outcome_arousal_group.rds \
+  Results/Models/TestRDS/brms_outcome_confidence_group.rds \
+  Results/Models/Study3/brms_m0.rds \
+  Results/Models/Study3/brms_m1.rds \
+  Results/Models/Study3/brms_maia_moderation.rds
+do
+  echo "Downloading ${f}..."
+  wget -q "${BASE}/${f}" -O "${f}"
+done
+
+echo "All model objects downloaded."
