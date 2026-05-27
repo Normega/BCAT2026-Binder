@@ -340,7 +340,7 @@ obj2 <- build_table2()   # Arousal Gating -> Table 2
 obj3 <- build_table3()   # MAIA Validity  -> Table 3
 
 overview_note <- paste0(
-  "UTM = University of XXXX-3 XXXX-4. ",
+  "UTM = University of Toronto Mississauga. ",
   "VAS = visual analogue scale (0\u201350). ",
   "SAM = Self-Assessment Manikin (1\u20139). ",
   "Quest = Watson\u2013Pelli adaptive Bayesian staircase (75% correct target). ",

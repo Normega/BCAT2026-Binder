@@ -576,3 +576,17 @@ apply_bh_correction <- function(pvals, study_label = "") {
 
   result
 }
+
+
+# ── mean_cl_boot ─────────────────────────────────────────────
+# Bootstrap mean + 95% CI for use with ggplot2::stat_summary.
+# Replaces Hmisc::mean_cl_boot, which was removed from Hmisc exports in v5.x.
+mean_cl_boot <- function(x, conf = 0.95, B = 1000, na.rm = TRUE) {
+  if (na.rm) x <- x[!is.na(x)]
+  n <- length(x)
+  if (n < 2) return(data.frame(y = mean(x), ymin = NA_real_, ymax = NA_real_))
+  boot_means <- replicate(B, mean(sample(x, n, replace = TRUE)))
+  alpha <- (1 - conf) / 2
+  data.frame(y = mean(x), ymin = quantile(boot_means, alpha),
+             ymax = quantile(boot_means, 1 - alpha))
+}

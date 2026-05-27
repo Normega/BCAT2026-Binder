@@ -163,7 +163,7 @@ for (thispack in packages) {
 # ============================================================
 # Paths — set once here; all sourced files use these objects
 # ============================================================
-BASE_DIR     <- "C:/Users/norma/Desktop/test6/" # <-- insert your base path here!!!
+BASE_DIR     <- "." # <-- insert your base path here!!!
 DATA_DIR     <- file.path(BASE_DIR, "Data")
 ANALYSIS_DIR <- file.path(BASE_DIR, "Analysis")
 RESULTS_DIR  <- file.path(BASE_DIR, "Results")

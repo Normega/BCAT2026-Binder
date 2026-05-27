@@ -162,7 +162,7 @@ p_misses <- make_panel(
 # ============================================================
 # 4. COMBINE WITH ANNOTATION
 # ============================================================
-p_combined <- (p_hits / p_misses) +
+p_combined <- patchwork::wrap_plots(p_hits, p_misses, ncol = 1) +
   patchwork::plot_annotation(
     title    = "Figure S[X]. Sensitivity to exclusion regime",
     subtitle = paste0(

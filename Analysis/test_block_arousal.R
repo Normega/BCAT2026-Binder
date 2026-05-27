@@ -570,8 +570,11 @@ make_bar_plot <- function(outcome_var, ylabel, title_str) {
     ggplot2::theme(strip.background = ggplot2::element_blank())
 }
 
-p_combined <- make_bar_plot("arousal",    "Arousal (1-6)",    "Arousal: Salience x Detection x Group") /
-  make_bar_plot("confidence", "Confidence (1-6)", "Confidence: Salience x Detection x Group")
+p_combined <- patchwork::wrap_plots(
+  make_bar_plot("arousal",    "Arousal (1-6)",    "Arousal: Salience x Detection x Group"),
+  make_bar_plot("confidence", "Confidence (1-6)", "Confidence: Salience x Detection x Group"),
+  ncol = 1
+)
 
 ggplot2::ggsave(
   file.path(FIG_DIR,"test_block_arousal_confidence_group.png"),
@@ -619,7 +622,8 @@ p_diff <- ggplot2::ggplot(
 
 ggplot2::ggsave(
   file.path(FIG_DIR,"brms_posterior_indirect_group.png"),
-  p_posterior / p_diff, width = 8, height = 8, dpi = 300
+  patchwork::wrap_plots(p_posterior, p_diff, ncol = 1),
+  width = 8, height = 8, dpi = 300
 )
 
 # ============================================================

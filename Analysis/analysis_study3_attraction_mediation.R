@@ -49,7 +49,7 @@ s3 <- s3l |>
     id           = as.integer(id)
   )
 
-message("Participants: ", n_distinct(s3$id))
+message("Participants: ", dplyr::n_distinct(s3$id))
 message("Trials:       ", nrow(s3))
 message("Change range: ", round(min(s3$Change), 2), " to ", round(max(s3$Change), 2))
 
