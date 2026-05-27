@@ -1,0 +1,23 @@
+scale,subscale,n_items,alpha,n,M,SD,min_obs,max_obs,note
+MAIA,MAIA_Noticing,4,0.686,167,13.49,3.43,4,20,
+MAIA,MAIA_NotDistract,6,0.883,167,17.63,5.96,6,34,
+MAIA,MAIA_NotWorry,5,0.814,167,15.25,4.71,3,27,
+MAIA,MAIA_AttentionReg,7,0.844,167,22.62,5.47,8,35,
+MAIA,MAIA_EmoAware,5,0.833,167,17.19,4.87,1,25,
+MAIA,MAIA_SelfReg,4,0.768,167,11.68,3.71,1,20,
+MAIA,MAIA_BodyListen,3,0.876,167,7.66,3.49,0,15,3-item subscale; alpha interpreted with caution
+MAIA,MAIA_Trusting,3,0.877,167,10.69,3.15,0,15,3-item subscale; alpha interpreted with caution
+MAIA,MAIA_Total,37,0.88,167,116.22,19.26,65,168,
+REI,REI_EA,10,0.889,167,2.42,0.72,0.8,4.6,alpha via check.keys; pre-scored means used for descriptives
+REI,REI_EE,10,0.829,167,2.88,0.66,1,4.6,alpha via check.keys; pre-scored means used for descriptives
+REI,REI_RA,10,0.904,167,2.41,0.87,1,4.9,alpha via check.keys; pre-scored means used for descriptives
+REI,REI_RE,10,0.876,167,2.45,0.8,1,5,alpha via check.keys; pre-scored means used for descriptives
+BIS/BAS,BIS,7,0.812,167,1.5,0.58,0.57,3.57,alpha via check.keys; pre-scored means used for descriptives
+BIS/BAS,BAS_Drive,4,0.8,167,1.33,0.62,0,3,alpha via check.keys; pre-scored means used for descriptives
+BIS/BAS,BAS_FunSeeking,4,0.688,167,1.19,0.59,0,2.75,alpha via check.keys; pre-scored means used for descriptives
+BIS/BAS,BAS_RewardResp,5,0.728,167,0.6,0.51,0,2.25,alpha via check.keys; pre-scored means used for descriptives
+GAD-7,GAD7_total,7,0.908,167,7.46,5.47,0,21,
+PHQ-9,PHQ9_total,9,0.894,167,7.95,6.34,0,26,
+PHQ-15,PHQ15_total,15,0.831,165,6.35,4.91,0,22,Re-scored from items; 2 participants excluded due to missing PHQ15_04
+BART,BARTtotalpoints,NA,NA,167,2928.26,1002.95,820,6490,behavioral task; no alpha
+BART,BARTtotalpumps,NA,NA,167,420.17,161.97,90,888,behavioral task; no alpha

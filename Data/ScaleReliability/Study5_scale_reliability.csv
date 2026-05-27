@@ -1,0 +1,19 @@
+scale,subscale,n_items,n,M,SD,min_obs,max_obs,alpha,interitem_r,note
+MAIA-2,MAIA,24,225,52.82,11.99,18,80,0.805,NA,
+MAIA-2,MAIA_Notice,3,225,7.6,2.45,1,12,0.522,NA,3-item subscale; alpha interpreted with caution
+MAIA-2,MAIA_NotDistract,3,225,4.89,2.78,0,12,0.787,NA,3-item subscale; alpha interpreted with caution
+MAIA-2,MAIA_NotWorry,3,225,5.98,3.17,0,12,0.808,NA,3-item subscale; alpha interpreted with caution
+MAIA-2,MAIA_AttentionReg,3,225,6.44,2.89,0,12,0.827,NA,3-item subscale; alpha interpreted with caution
+MAIA-2,MAIA_EmoAware,3,225,8.56,2.95,0,12,0.798,NA,3-item subscale; alpha interpreted with caution
+MAIA-2,MAIA_SelfReg,3,225,6.48,3.22,0,12,0.793,NA,3-item subscale; alpha interpreted with caution
+MAIA-2,MAIA_BodyListen,3,225,4.83,2.83,0,12,0.786,NA,3-item subscale; alpha interpreted with caution
+MAIA-2,MAIA_Trust,3,225,8.05,3.15,0,12,0.879,NA,3-item subscale; alpha interpreted with caution
+BIPS,Stress,9,225,31.25,5.32,13,44,0.788,NA,
+BARQ-R,BARQ,12,225,17.78,5.26,3,36,0.723,NA,
+SPANE,Pos,6,225,22.33,3.95,8,30,0.883,NA,
+SPANE,Neg,6,225,17.94,4.01,7,30,0.771,NA,
+MSES-12,MSES,12,225,48.37,14.31,16,79,0.88,NA,
+MSES-12,MSES_selfdoubt,2,225,8.26,3.05,2,14,NA,0.607,"2-item subscale; alpha not reported, see interitem_r"
+PAQ-S,Alexithymia,6,225,20.26,7.31,6,41,0.787,NA,
+PHQ-4,PHQ4_Anxiety,2,225,3.09,1.97,0,6,NA,0.787,"2-item subscale; alpha not reported, see interitem_r"
+PHQ-4,PHQ4_Depression,2,225,1.88,1.67,0,6,NA,0.6,"2-item subscale; alpha not reported, see interitem_r"

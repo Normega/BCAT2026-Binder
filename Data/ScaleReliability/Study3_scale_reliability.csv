@@ -1,0 +1,14 @@
+scale,subscale,n_items,alpha,n,M,SD,min_obs,max_obs,note
+MAIA-1,MAIA_Noticing,4,0.705,246,20.15,4.66,4,28,
+MAIA-1,MAIA_NotDistract,3,0.596,246,10.19,3.41,3,21,3-item subscale; alpha interpreted with caution
+MAIA-1,MAIA_NotWorry,3,0.52,246,11.18,3.55,3,20,3-item subscale; alpha interpreted with caution
+MAIA-1,MAIA_AttentionReg,7,0.858,246,29.46,7.8,7,49,
+MAIA-1,MAIA_EmoAware,5,0.817,246,25.22,6.39,5,35,
+MAIA-1,MAIA_SelfReg,4,0.797,246,16.92,5.15,4,28,
+MAIA-1,MAIA_BodyListen,3,0.828,246,10.66,4.34,3,21,3-item subscale; alpha interpreted with caution
+MAIA-1,MAIA_Trusting,3,0.88,246,15.37,4.39,3,21,3-item subscale; alpha interpreted with caution
+MAIA-1,MAIA_Total,32,0.911,246,139.15,24.08,63,206,32-item version; 1-7 scale. Do not compare means with Studies 1-2 (1-5) or 4-5 (0-5).
+PSS-10,PSS_total,10,0.791,246,21.72,6.59,2,40,"0-4 scale; items 4,5,7,8 reversed (4-x)"
+PANAS,PANAS_PA,10,0.863,246,30.53,8.03,10,50,
+PANAS,PANAS_NA,9,0.824,246,24.2,7.36,9,44,9 items only; item 20 (Afraid) accidentally omitted in Study 3
+Stress,Stress_1,1,NA,246,66.24,23.51,3,100,Single VAS item (0-100); no alpha

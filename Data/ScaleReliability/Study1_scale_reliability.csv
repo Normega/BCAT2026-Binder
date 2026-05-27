@@ -1,0 +1,10 @@
+subscale,n_items,alpha,n,M,SD,min_obs,max_obs,note
+MAIA_Noticing,4,0.588,184,14.15,3.09,2,20,
+MAIA_NotDistract,6,0.787,184,17.6,5.02,6,34,
+MAIA_NotWorry,5,0.727,184,13.99,4.04,3,24,
+MAIA_AttentionReg,7,0.823,184,21.87,5.39,5,32,
+MAIA_EmoAware,5,0.77,184,17.67,4.57,3,25,
+MAIA_SelfReg,4,0.806,184,10.83,4.17,0,19,
+MAIA_BodyListen,3,0.819,184,7.18,3.47,0,15,3-item subscale; alpha interpreted with caution
+MAIA_Trusting,3,0.847,184,10.33,3.25,0,15,3-item subscale; alpha interpreted with caution
+MAIA_Total,37,0.88,184,113.62,17.75,60,152,

@@ -1,0 +1,16 @@
+# R session artefacts
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Generated outputs (created by MainAnalysis.R — not tracked)
+Figures/
+Tables/
+
+# Claude Code project files
+.claude/
+
+# OS noise
+.DS_Store
+Thumbs.db
