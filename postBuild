@@ -8,7 +8,7 @@ REPO=Normega/BCAT2026-Binder
 COMMIT=d0d86a2
 BASE=https://raw.githubusercontent.com/${REPO}/${COMMIT}
 
-mkdir -p Results/Models/TestRDS Results/Models/Study3
+mkdir -p Results/Models/TestRDS Results/Models/Study3 Results/Models/MissBaseline
 
 for f in \
   Results/Models/TestRDS/brms_arousal_group_bs.rds \
@@ -18,7 +18,15 @@ for f in \
   Results/Models/TestRDS/brms_outcome_confidence_group.rds \
   Results/Models/Study3/brms_m0.rds \
   Results/Models/Study3/brms_m1.rds \
-  Results/Models/Study3/brms_maia_moderation.rds
+  Results/Models/Study3/brms_maia_moderation.rds \
+  Results/Models/MissBaseline/brms_miss_m0_study1a.rds \
+  Results/Models/MissBaseline/brms_miss_m1_study1a.rds \
+  Results/Models/MissBaseline/brms_miss_m0_study2.rds \
+  Results/Models/MissBaseline/brms_miss_m1_study2.rds \
+  Results/Models/MissBaseline/brms_miss_m0_study4.rds \
+  Results/Models/MissBaseline/brms_miss_m1_study4.rds \
+  Results/Models/MissBaseline/brms_miss_m0_study5.rds \
+  Results/Models/MissBaseline/brms_miss_m1_study5.rds
 do
   echo "Downloading ${f}..."
   wget -q "${BASE}/${f}" -O "${f}"

@@ -78,6 +78,10 @@ message("========================================")
     brms::prior(cauchy(0, 1),     class = sigma)
   )
 
+  cache_dir <- file.path(MODEL_DIR, "MissBaseline")
+  dir.create(cache_dir, showWarnings = FALSE, recursive = TRUE)
+  slug <- tolower(gsub("[^A-Za-z0-9]", "_", study_label))
+
   message(sprintf("  Fitting M0 (intercept only) for %s...", study_label))
   m0 <- brms::brm(
     Arousal_z ~ 1 + (1 | id),
@@ -88,7 +92,8 @@ message("========================================")
     warmup    = warmup,
     seed      = seed,
     save_pars = brms::save_pars(all = TRUE),
-    silent    = 2
+    silent    = 2,
+    file      = file.path(cache_dir, paste0("brms_miss_m0_", slug))
   )
 
   message(sprintf("  Fitting M1 (IsMiss) for %s...", study_label))
@@ -101,7 +106,8 @@ message("========================================")
     warmup    = warmup,
     seed      = seed,
     save_pars = brms::save_pars(all = TRUE),
-    silent    = 2
+    silent    = 2,
+    file      = file.path(cache_dir, paste0("brms_miss_m1_", slug))
   )
 
   message(sprintf("  Bridge sampling for %s...", study_label))
