@@ -5,10 +5,7 @@ USER root
 # Install additional R packages not already in rocker/binder
 # pkgType=binary avoids source compilation
 RUN Rscript -e " \
-  options( \
-    repos   = c(CRAN = 'https://packagemanager.posit.co/all/__linux__/noble/latest'), \
-    pkgType = 'binary' \
-  ); \
+  options(repos = c(CRAN = 'https://packagemanager.posit.co/all/__linux__/noble/latest')); \
   install.packages(c( \
     'lmerTest', 'emmeans', 'broom.mixed', 'MuMIn', 'irr', \
     'BayesFactor', 'ppcor', 'car', \
