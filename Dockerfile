@@ -18,8 +18,7 @@ RUN Rscript -e " \
 # Copy the repository into the image
 COPY --chown=rstudio:rstudio . /home/rstudio/
 
-# Download pre-computed brms model objects (baked into the image layer)
-RUN cd /home/rstudio && bash postBuild
-
+# Run postBuild as rstudio so Results/ is owned by the right user
 USER rstudio
 WORKDIR /home/rstudio
+RUN bash postBuild
